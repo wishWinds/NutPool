@@ -79,7 +79,6 @@ public class NutPool {
     public func cancelGetProductTask(_ task: Task) {
         // 任务的状态：正在被添加->已添加(等待商品)->正在派发商品->商品派发完毕完毕
         DispatchQueue.syncMain {
-            self.consumeOperaionLock.lock()
             self.pendingList.forEach { (item) in
                 if item.keys.first == task.name {
                     item.values.first?.cancel()
@@ -89,7 +88,6 @@ public class NutPool {
             self.pendingList.removeAll { (item) -> Bool in
                 return item.keys.first == task.name
             }
-            self.consumeOperaionLock.unlock()
         }
     }
 
