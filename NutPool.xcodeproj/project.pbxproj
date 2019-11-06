@@ -8,12 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		FEB87FBB23727C880043C875 /* NutPool.h in Headers */ = {isa = PBXBuildFile; fileRef = FEB87FB923727C880043C875 /* NutPool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEB87FC223727D9F0043C875 /* NutPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB87FC123727D9F0043C875 /* NutPool.swift */; };
+		FEB87FCA2372A3C80043C875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB87FC92372A3C80043C875 /* AppDelegate.swift */; };
+		FEB87FCC2372A3C80043C875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB87FCB2372A3C80043C875 /* ViewController.swift */; };
+		FEB87FCF2372A3C80043C875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB87FCD2372A3C80043C875 /* Main.storyboard */; };
+		FEB87FD12372A3CA0043C875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEB87FD02372A3CA0043C875 /* Assets.xcassets */; };
+		FEB87FD42372A3CA0043C875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB87FD22372A3CA0043C875 /* LaunchScreen.storyboard */; };
+		FEB87FDA2372A49C0043C875 /* NutPool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB87FB623727C880043C875 /* NutPool.framework */; };
+		FEB87FDC2372A4A50043C875 /* NutPool.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FEB87FB623727C880043C875 /* NutPool.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FEB87FDB2372A49F0043C875 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FEB87FDC2372A4A50043C875 /* NutPool.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FEB87FB623727C880043C875 /* NutPool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NutPool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB87FB923727C880043C875 /* NutPool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NutPool.h; sourceTree = "<group>"; };
 		FEB87FBA23727C880043C875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEB87FC123727D9F0043C875 /* NutPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutPool.swift; sourceTree = "<group>"; };
+		FEB87FC72372A3C80043C875 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEB87FC92372A3C80043C875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEB87FCB2372A3C80043C875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEB87FCE2372A3C80043C875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEB87FD02372A3CA0043C875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEB87FD32372A3CA0043C875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEB87FD52372A3CA0043C875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +53,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FEB87FC42372A3C80043C875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEB87FDA2372A49C0043C875 /* NutPool.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,7 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				FEB87FB823727C880043C875 /* NutPool */,
+				FEB87FC82372A3C80043C875 /* Test */,
 				FEB87FB723727C880043C875 /* Products */,
+				FEB87FD92372A49C0043C875 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				FEB87FB623727C880043C875 /* NutPool.framework */,
+				FEB87FC72372A3C80043C875 /* Test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,8 +88,29 @@
 			children = (
 				FEB87FB923727C880043C875 /* NutPool.h */,
 				FEB87FBA23727C880043C875 /* Info.plist */,
+				FEB87FC123727D9F0043C875 /* NutPool.swift */,
 			);
 			path = NutPool;
+			sourceTree = "<group>";
+		};
+		FEB87FC82372A3C80043C875 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FEB87FC92372A3C80043C875 /* AppDelegate.swift */,
+				FEB87FCB2372A3C80043C875 /* ViewController.swift */,
+				FEB87FCD2372A3C80043C875 /* Main.storyboard */,
+				FEB87FD02372A3CA0043C875 /* Assets.xcassets */,
+				FEB87FD22372A3CA0043C875 /* LaunchScreen.storyboard */,
+				FEB87FD52372A3CA0043C875 /* Info.plist */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		FEB87FD92372A49C0043C875 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +145,39 @@
 			productReference = FEB87FB623727C880043C875 /* NutPool.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		FEB87FC62372A3C80043C875 /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEB87FD62372A3CA0043C875 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				FEB87FC32372A3C80043C875 /* Sources */,
+				FEB87FC42372A3C80043C875 /* Frameworks */,
+				FEB87FC52372A3C80043C875 /* Resources */,
+				FEB87FDB2372A49F0043C875 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Test;
+			productName = Test;
+			productReference = FEB87FC72372A3C80043C875 /* Test.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		FEB87FAD23727C880043C875 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = shupeng;
 				TargetAttributes = {
 					FEB87FB523727C880043C875 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+					FEB87FC62372A3C80043C875 = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
@@ -104,6 +188,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = FEB87FAC23727C880043C875;
 			productRefGroup = FEB87FB723727C880043C875 /* Products */;
@@ -111,6 +196,7 @@
 			projectRoot = "";
 			targets = (
 				FEB87FB523727C880043C875 /* NutPool */,
+				FEB87FC62372A3C80043C875 /* Test */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +209,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FEB87FC52372A3C80043C875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEB87FD42372A3CA0043C875 /* LaunchScreen.storyboard in Resources */,
+				FEB87FD12372A3CA0043C875 /* Assets.xcassets in Resources */,
+				FEB87FCF2372A3C80043C875 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -130,10 +226,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEB87FC223727D9F0043C875 /* NutPool.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEB87FC32372A3C80043C875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEB87FCC2372A3C80043C875 /* ViewController.swift in Sources */,
+				FEB87FCA2372A3C80043C875 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FEB87FCD2372A3C80043C875 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEB87FCE2372A3C80043C875 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEB87FD22372A3CA0043C875 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEB87FD32372A3CA0043C875 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FEB87FBC23727C880043C875 /* Debug */ = {
@@ -261,6 +386,7 @@
 		FEB87FBF23727C880043C875 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shupeng.NutPool;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +413,7 @@
 		FEB87FC023727C880043C875 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -308,6 +436,42 @@
 			};
 			name = Release;
 		};
+		FEB87FD72372A3CA0043C875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TAXNVNJP42;
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shupeng.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEB87FD82372A3CA0043C875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TAXNVNJP42;
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shupeng.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -325,6 +489,15 @@
 			buildConfigurations = (
 				FEB87FBF23727C880043C875 /* Debug */,
 				FEB87FC023727C880043C875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEB87FD62372A3CA0043C875 /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEB87FD72372A3CA0043C875 /* Debug */,
+				FEB87FD82372A3CA0043C875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
